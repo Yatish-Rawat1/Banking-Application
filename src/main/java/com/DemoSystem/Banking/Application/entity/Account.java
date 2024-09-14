@@ -16,8 +16,8 @@ import lombok.Setter;
 public class Account {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+   private Long id;
   @Column(name = "account_holder_name")
-    String accountHolderName;
-    double balance;
+    private String accountHolderName;
+    private double balance;
 }

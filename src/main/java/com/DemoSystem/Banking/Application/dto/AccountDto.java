@@ -1,9 +1,9 @@
 package com.DemoSystem.Banking.Application.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
 @Data
-// auto generate getter setter constructor
+@AllArgsConstructor
 public class AccountDto {
     private Long id;
     private String accountHolderName;

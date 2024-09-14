@@ -1,9 +1,12 @@
 package com.DemoSystem.Banking.Application.service;
 
 import com.DemoSystem.Banking.Application.dto.AccountDto;
-import com.DemoSystem.Banking.Application.entity.Account;
 
 public interface AccountService {
 
-    AccountDto createaccount(AccountDto accountDto);
-}
+    AccountDto createAccount(AccountDto accountDto);
+    AccountDto findAccountById(Long id);
+    AccountDto deposit(Long id, double amount);
+    Integer StreamTest(Long id);
+
+    }
